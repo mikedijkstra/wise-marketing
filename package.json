@@ -1,0 +1,22 @@
+{
+  "name": "wise-marketing",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "sass-build": "node-sass src/styles/scss/index.scss src/styles/css/index.css --output-style compressed",
+    "sass-watch": "node-sass src/styles/scss/index.scss src/styles/css/index.css --watch --output-style compressed",
+    "start": "npm-run-all sass-build -s sass-watch | react-scripts start",
+    "build": "npm-run-all sass-build && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass": "4.5.3",
+    "npm-run-all": "^4.1.2"
+  }
+}

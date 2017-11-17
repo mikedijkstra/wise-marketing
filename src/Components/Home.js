@@ -1,0 +1,183 @@
+import React, { Component } from 'react';
+
+class Home extends Component {
+  render() {
+    return (
+        <div className="wrapper home fadeIn">
+          <div className="header header-home u-relative">
+            <div className="header-content">
+              <div className="insight"><span>Create a culture of continuous learning</span></div>
+              <div className="insight"><span>Build a searchable knowledge base</span></div>
+              <div className="insight"><span>Set reading goals to work towards</span></div>
+              <div className="insight"><span>Build a searchable knowledge base</span></div>
+              <div className="insight"><span>Extend formal learning courses</span></div>
+              <div className="insight"><span>Share articles, videos and audio</span></div>
+
+              <div className="headlines u-padding-left-sm u-sm-padding-left-xl">
+                <div className="headline">
+                  <h1 className="t-face-title u-tmd u-xs-txl u-lg-txxl u-line-sm">
+                    <span className="headline-title">A shared reading list</span>
+                    <span className="headline-sub">for your team.</span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="page">
+            <div className="page-content t-set">
+              <h3>Creating a shared reading list should be easy.</h3>
+              <img src="/images/team-share.png" />
+              <p>Keeping a shared list of links with your team shouldn't be hard, and with Wise, it isn't. Wise helps you create shared reading lists for your team, so links are no longer lost in Slack, emails and text messages.</p>
+              <p>Shared reading lists are made up of links added by you and your team members and are always available online and in a linked Slack channel.</p>
+            </div>
+          </div>
+
+          <div className="bump t-set">
+            <h3>Wise is a searchable knowledge base</h3>
+            <p>Wise shared readings lists grow into a searchable knowledge base of useful, relevant content of all different types.</p>
+          </div>
+
+          <div className="cards">
+            <div className="card">
+              <div className="card-icon">Medium</div>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">Youtube</div>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">Soundcloud</div>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">eBooks</div>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">PDFs</div>
+            </div>
+
+            <div className="card">
+              <span className="card-icon">Text</span>
+            </div>
+          </div>
+
+          <div className="page">
+            <div className="page-split">
+              <div className="page-content t-set">
+                <h3>Track and rate</h3>
+                <p>Wise makes it easy for everyone on your team to track their reading progress. By marking a link as team members can easily stay on top of shared reading lists, filtering the list by unread items or revisiting links they’ve read previously.</p>
+                <p>Wise also lets team members rate links by upvoting, similar to what you find on services like Reddit, Hacker News and Product Hunt. By rating links you can learn what your team enjoy reading and content they agree with.</p>
+                <p>Wise will be launching advanced analytics for teams to better track reading progress and understand and source relevant content.</p>
+              </div>
+              <div className="page-aside">
+                <img src="/images/team-share.png" />
+              </div>
+            </div>
+          </div>
+
+          <div className="bump t-set">
+            <h3>Multiple lists<br />for multiple uses</h3>
+            <p>Wise makes it easy for you and your team to create and maintain multiple shared reading lists for different topics, projects and use cases.</p>
+          </div>
+
+          <div className="cards">
+            <div className="card">
+              <div className="card-inner t-set">
+                <div className="card-icon">Icon</div>
+                <h4>Onboarding</h4>
+                <p>Ensure new employees know what's important to your company.</p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-inner t-set">
+                <div className="card-icon">Icon</div>
+                <h4>News</h4>
+                <p>Keep your team updated on news relevant to your industry.</p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-inner t-set">
+                <div className="card-icon">Icon</div>
+                <h4>Best practices</h4>
+                <p>Maintain a list of best practices for your field of expertise.</p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-inner t-set">
+                <div className="card-icon">Icon</div>
+                <h4>Inspiration</h4>
+                <p>Collect and discuss inspiration for a project.</p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-inner t-set">
+                <div className="card-icon">Icon</div>
+                <h4>Courses</h4>
+                <p>Supplement course material with a list of related links.</p>
+              </div>
+            </div>
+
+            <div className="card">
+              <div className="card-inner t-set">
+                <div className="card-icon">Icon</div>
+                <h4>Study</h4>
+                <p>Maintain a list of links with your study group.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bump t-set">
+            <h3>Cross-platform support</h3>
+            <p>Slack Icon</p>
+            <p>In addition to the web, Wise integrates with Slack so your team can easily add new links and be notified of when a shared reading list is updated, you simply link a list to a channel and @wisebot will do the rest.</p>
+          </div>
+
+          <div className="cards">
+            <div className="card">
+              <div className="card-icon">Chrome</div>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">Safari</div>
+            </div>
+
+            <div className="card">
+              <div className="card-icon">Firefox</div>
+            </div>
+          </div>
+
+          <div className="bump bump-accompanying t-set">
+            <p>The Wise browser extensions make it easy to add links while you're browsing.</p>
+          </div>
+
+          <div className="page">
+            <div className="page-split">
+              <div className="page-content t-set">
+                <h3>Start a shared reading list</h3>
+                <p>Get started with Wise today for free. By signing up with Slack you'll allow Wise to connect to your Slack account and create a #wise channel which will be your first reading list.</p>
+                <p>You can add links directly from Slack and every new article added will be shared in your linked Slack channel.</p>
+
+                <p><a href="https://read.wiseapp.com/auth/slack" className="btn">Sign up with Slack</a></p>
+
+                <p><small>Don't use Slack? We'll be opening up Wise to all users soon.</small></p>
+              </div>
+              <div className="page-aside">
+                <img src="/images/team-share.png" />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+    );
+  }
+}
+
+export default Home;

@@ -1,0 +1,47 @@
+@import './core/variables';
+
+$device-xs:                              660px;
+$screen-xs-min:                          $device-xs;
+
+/**
+ *  Text Sizes
+ *  - - - - - - - - - - - - - - - - */
+$text:                                   10px;
+$text-xxs:                               11px;
+$text-xs:                                15px;
+$text-sm:                                20px;
+$text-md:                                30px;
+$text-lg:                                40px;
+$text-xl:                                60px;
+$text-xxl:                               80px;
+
+/**
+ *  Spacing
+ *  - - - - - - - - - - - - - - - - */
+
+$space-xs:                               10px;
+$space-sm:                               20px;
+$space-md:                               40px;
+$space-lg:                               60px;
+$space-xl:                               100px;
+
+/**
+ *  Colors - Descriptive
+ *  - - - - - - - - - - - - - - - - */
+
+$color-black:                            #000000;
+$color-white:                            #ffffff;
+$color-mine-shaft:                       #333;
+
+/**
+ *  Colors - Functional
+ *  - - - - - - - - - - - - - - - - */
+
+$color-base:                             white;
+$color-inverted:                         black;
+$color-muted:                            $color-mine-shaft;
+$color-brand:                            $color-black;
+
+$color-home-text:                        white;
+$color-home-background:                  #39c8ea;
+$color-dark-background:                  #1b1428;

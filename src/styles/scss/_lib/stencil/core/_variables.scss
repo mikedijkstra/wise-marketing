@@ -1,0 +1,60 @@
+/**
+ *  Screen Sizes
+ *  - - - - - - - - - - - - - - - - */
+
+$device-xxs:                             375px !default;
+$device-xs:                              480px !default;
+$device-sm:                              768px !default;
+$device-md:                              1024px !default;
+$device-lg:                              1280px !default;
+$device-xl:                              1500px !default;
+$device-xxl:                             1800px !default;
+
+$screen-xs-min:                          $device-xs !default;
+$screen-sm-min:                          $device-sm !default;
+$screen-md-min:                          $device-md !default;
+$screen-lg-min:                          $device-lg !default;
+$screen-xl-min:                          $device-xl !default;
+
+$email-width-narrow:                     600px;
+$email-width-wide:                       980px;
+
+/**
+ *  Text Sizes
+ *  - - - - - - - - - - - - - - - - */
+$text:                                   9px !default;
+$text-xxs:                               11px !default;
+$text-xs:                                13px !default;
+$text-sm:                                18px !default;
+$text-md:                                25px !default;
+$text-lg:                                40px !default;
+$text-xl:                                60px !default;
+$text-xxl:                               100px !default;
+
+/**
+ *  Letter Spacing
+ *  - - - - - - - - - - - - - - - - */
+
+$letter-sm:                              0.05em !default;
+$letter-md:                              0.2em !default;
+$letter-lg:                              0.3em !default;
+
+/**
+ *  Line Height
+ *  - - - - - - - - - - - - - - - - */
+
+$line-xs:                                1.0 !default;
+$line-sm:                                1.25 !default;
+$line-md:                                1.5 !default;
+$line-lg:                                1.75 !default;
+$line-xl:                                2.0 !default;
+
+/**
+ *  Spacing
+ *  - - - - - - - - - - - - - - - - */
+
+$space-xs:                               10px !default;
+$space-sm:                               15px !default;
+$space-md:                               30px !default;
+$space-lg:                               60px !default;
+$space-xl:                               100px !default;
