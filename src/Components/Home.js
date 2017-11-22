@@ -20,7 +20,7 @@ import IconFirefox from './Icons/Firefox';
 class Home extends Component {
   render() {
     return (
-        <div className="wrapper home fadeIn">
+        <div className="wrapper home">
           <div className="header header-home u-relative">
             <div className="header-content">
               <div className="insight"><span>Create a culture of continuous learning</span></div>
@@ -163,17 +163,17 @@ class Home extends Component {
           </div>
 
           <div className="cards">
-            <div className="card card--disabled">
+            <div className="card card-xs card--disabled">
               <div className="icon"><IconChrome /></div>
               <p className="t-center">Coming Soon</p>
             </div>
 
-            <div className="card card--disabled">
+            <div className="card card-xs card--disabled">
               <div className="icon"><IconSafari /></div>
               <p className="t-center">Coming Soon</p>
             </div>
 
-            <div className="card card--disabled">
+            <div className="card card-xs card--disabled card-xs--widow">
               <div className="icon"><IconFirefox /></div>
               <p className="t-center">Coming Soon</p>
             </div>
@@ -199,8 +199,6 @@ class Home extends Component {
               </div>
             </div>
           </div>
-
-
         </div>
     );
   }

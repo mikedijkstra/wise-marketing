@@ -6,6 +6,7 @@ import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
 import About from './Components/About';
+import Contact from './Components/Contact';
 
 class App extends Component {
   constructor() {
@@ -39,6 +40,7 @@ class App extends Component {
           <Nav />
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
           <Footer />
         </div>
       </div>
