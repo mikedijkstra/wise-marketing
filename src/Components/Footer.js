@@ -10,6 +10,7 @@ class Footer extends Component {
             <div className="col-sm-9">
               <div className="u-text-center u-sm-text-left">
                 <Link to="/about" className="footer-link">About</Link>
+                <Link to="/pricing" className="footer-link">Pricing</Link>
                 <Link to="/contact" className="footer-link">Contact</Link>
                 <a href="" className="footer-link" target="_blank">Help</a>
                 <a href="" className="footer-link" target="_blank">Terms</a>
