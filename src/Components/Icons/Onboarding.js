@@ -4,8 +4,8 @@ class IconOnboarding extends Component {
   render () {
     return (
       <svg width="200px" height="150px" viewBox="0 0 200 150" version="1.1">
-          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="noun_148442_cc" fill-rule="nonzero" fill="#000000">
+          <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+              <g id="noun_148442_cc" fillRule="nonzero" fill="#000000">
                   <path d="M0,0 L0,60 L0,150 L200,150 L200,60 L200,0 L0,0 Z M196,146 L4,146 L4,64 L196,64 L196,146 Z M196,60 L4,60 L4,4 L196,4 L196,60 Z" id="Shape"></path>
                   <path d="M82.623,29.035 C82.548,28.378 82.5,27.712 82.5,27.035 C82.5,26.358 82.548,25.692 82.623,25.035 L65.967,25.035 C66.042,25.692 66.09,26.358 66.09,27.035 C66.09,27.712 66.042,28.378 65.967,29.035 L82.623,29.035 Z" id="Shape"></path>
                   <path d="M133.713,29.035 C133.638,28.378 133.59,27.712 133.59,27.035 C133.59,26.358 133.638,25.692 133.713,25.035 L117.377,25.035 C117.452,25.692 117.5,26.358 117.5,27.035 C117.5,27.712 117.452,28.378 117.377,29.035 L133.713,29.035 Z" id="Shape"></path>

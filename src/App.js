@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
+import { Route } from "react-router-dom";
+import TransitionGroup from "react-transition-group/TransitionGroup";
+
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
+import About from './Components/About';
 
 class App extends Component {
   constructor() {
@@ -30,10 +34,13 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <Nav />
-        <Home />
-        <Footer />
+      <div className="app">
+        <div>
+          <Nav />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Footer />
+        </div>
       </div>
     );
   }

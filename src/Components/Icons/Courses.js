@@ -4,8 +4,8 @@ class IconCourses extends Component {
   render () {
     return (
       <svg width="94px" height="86px" viewBox="0 0 94 86" version="1.1">
-          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-              <g id="noun_1231266_cc" fill-rule="nonzero" fill="#000000">
+          <g id="Page-1" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
+              <g id="noun_1231266_cc" fillRule="nonzero" fill="#000000">
                   <rect id="Rectangle-path" x="9.54" y="56.34" width="10.52" height="4"></rect>
                   <rect id="Rectangle-path" x="9.54" y="13.13" width="10.52" height="4"></rect>
                   <rect id="Rectangle-path" x="33.54" y="56.34" width="10.52" height="4"></rect>

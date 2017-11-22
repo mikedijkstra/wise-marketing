@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import LogoMedium from './Logos/Medium';
 import LogoAcrobat from './Logos/Acrobat';
 import LogoSoundcloud from './Logos/Soundcloud';
@@ -42,7 +43,7 @@ class Home extends Component {
 
           <div className="page page--narrow">
             <div className="page-content t-set">
-              <div class="page-inner">
+              <div className="page-inner">
                 <h3>Creating a shared reading list with your team shouldn't be hard &hellip;</h3>
                 <img src="images/list-confused.svg" />
                 <h4>&hellip; and with Wise, it isnt.</h4>
@@ -86,7 +87,7 @@ class Home extends Component {
           <div className="page">
             <div className="page-split">
               <div className="page-content t-set">
-                <div class="page-inner">
+                <div className="page-inner">
                   <h3>Contribute, track and rate links in your lists</h3>
                   <p>Wise makes it easy for everyone on your team to contribute links and track their reading progress. By marking a link as read team members can easily stay on top of shared reading lists, filtering the list by unread items or revisiting links they’ve read previously.</p>
                   <p>Wise also lets team members rate links by upvoting, similar to what you find on services like Reddit, Hacker News and Product Hunt. By rating links you can learn what your team enjoy reading and content they agree with.</p>
@@ -164,17 +165,17 @@ class Home extends Component {
           <div className="cards">
             <div className="card card--disabled">
               <div className="icon"><IconChrome /></div>
-              <p class="t-center">Coming Soon</p>
+              <p className="t-center">Coming Soon</p>
             </div>
 
             <div className="card card--disabled">
               <div className="icon"><IconSafari /></div>
-              <p class="t-center">Coming Soon</p>
+              <p className="t-center">Coming Soon</p>
             </div>
 
             <div className="card card--disabled">
               <div className="icon"><IconFirefox /></div>
-              <p class="t-center">Coming Soon</p>
+              <p className="t-center">Coming Soon</p>
             </div>
           </div>
 

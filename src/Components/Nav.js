@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from "react-router-dom";
 
 class Nav extends Component {
   render() {
@@ -6,8 +7,7 @@ class Nav extends Component {
       <div className="nav u-absolute u-left u-right u-top">
         <div className="container-fluid">
           <div className="u-padding-vertical-sm">
-            <a href="/"><div className="nav-logo sprite-logo-200x71"></div></a>
-
+            <Link to="/"><div className="nav-logo sprite-logo-200x71"></div></Link>
             <a href="https://read.wiseapp.com/auth/slack" className="nav-cta btn js-section-nav-item">Sign in</a>
           </div>
         </div>
