@@ -1,0 +1,5 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - git push git@heroku.com:wise-marketing.git $CIRCLE_SHA1:refs/heads/master
