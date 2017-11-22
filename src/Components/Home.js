@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EasyTransition from 'react-easy-transition';
 
 import LogoMedium from './Logos/Medium';
 import LogoAcrobat from './Logos/Acrobat';
@@ -17,9 +18,27 @@ import IconChrome from './Icons/Chrome';
 import IconSafari from './Icons/Safari';
 import IconFirefox from './Icons/Firefox';
 
+
 class Home extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { show: false }
+  }
+
+  componentDidMount() {
+    this.setState({
+      show: true
+    })
+  }
+
   render() {
     return (
+      <EasyTransition
+        path={this.props.location.pathname}
+        initialStyle={{opacity: 0}}
+        transition="opacity 0.3s ease-in"
+        finalStyle={{opacity: 1}}
+      >
         <div className="wrapper home">
           <div className="header header-home u-relative">
             <div className="header-content">
@@ -45,8 +64,9 @@ class Home extends Component {
             <div className="page-content t-set">
               <div className="page-inner">
                 <h3>Creating a shared reading list with your team shouldn't be hard &hellip;</h3>
-                <img src="images/list-confused.svg" />
+                <img src="images/list-confused.svg" alt="Confused team sharing links" />
                 <h4>&hellip; and with Wise, it isnt.</h4>
+                <img src="images/list-ordered.svg" alt="Team organised sharing links" />
                 <p>Wise helps you create shared reading lists for your team, so links are no longer lost in Slack, emails and text messages.</p>
                 <p>Shared reading lists are made up of links added by you and your team members and are always available online and in a linked Slack channel.</p>
               </div>
@@ -96,7 +116,7 @@ class Home extends Component {
                 </div>
               </div>
               <div className="page-aside">
-                <img src="images/list-screenshot.png" />
+                <img src="images/list-screenshot.png" alt="Wise Shared Reading List" />
               </div>
             </div>
           </div>
@@ -195,11 +215,12 @@ class Home extends Component {
                 <p><small>Don't use Slack? We'll be opening up Wise to all users soon.</small></p>
               </div>
               <div className="page-aside">
-                <img src="images/wisebot-slack.png" />
+                <img src="images/wisebot-slack.png" alt="Slack Icon" />
               </div>
             </div>
           </div>
         </div>
+      </EasyTransition>
     );
   }
 }

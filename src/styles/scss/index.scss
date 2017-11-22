@@ -24,6 +24,8 @@ $section-indicator-width: 70px;
 
 $page-content-width: 550px;
 
+$input-height: 60px;
+
 .js-fade {
   transition: opacity 0.2s linear;
 }
@@ -35,7 +37,7 @@ $page-content-width: 550px;
 html {
 }
 
-body.page,
+body,
 .wrapper {
   @include background;
 }
@@ -383,8 +385,8 @@ img {
 
 .btn-lg {
   font-size: 20px;
-  height: 60px;
-  line-height: 60px;
+  height: $input-height;
+  line-height: $input-height;
 }
 
 .btn-wide {
@@ -486,7 +488,17 @@ body.preload {
  *  - - - - - - - - - - - - - - - - */
 
 .nav {
+  height: 76px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.3s ease-in-out;
   z-index: 20;
+
+  .is-scrolled & {
+    background: $color-inverted;
+  }
 }
 
 .nav-logo {
@@ -494,15 +506,31 @@ body.preload {
 }
 
 .nav-cta {
-  display: none;
+  height: 38px;
+  line-height: 38px;
   position: fixed;
   right: 20px;
+  text-transform: uppercase;
   top: 20px;
   z-index: 20;
+}
 
-  @include md {
+.nav-links {
+  display: none;
+  position: fixed;
+  right: 130px;
+
+  @include sm {
     display: block;
   }
+}
+
+.nav-link {
+  @extend .t-face-label;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 $space-xs;
+  margin-top: 12px;
 }
 
 /**
@@ -520,6 +548,7 @@ body,
 
 .wrapper {
   min-height: 100%;
+  min-height: 100vh;
   margin-bottom: -$footer-height;
   overflow: hidden;
   padding: 0 $space-sm;
@@ -727,7 +756,7 @@ body,
   }
 
   &:nth-of-type(1) {
-    top: 90px;
+    top: 130px;
     left: 50px;
 
     @include sm {
@@ -750,7 +779,7 @@ body,
 
     @include sm {
       display: block;
-      top: 40px;
+      top: 105px;
       right: 130px;
     }
 
@@ -776,7 +805,7 @@ body,
   &:nth-of-type(5) {
     display: none;
     right: 95px;
-    top: 95px;
+    top: 140px;
 
     @include sm {
       display: block;
@@ -1131,3 +1160,28 @@ body.page {
   }
 }
 
+.form-message {
+  margin-top: $space-lg;
+}
+
+label {
+  @extend .t-sxs;
+  display: block;
+}
+
+input,
+textarea {
+  border: 0;
+  border-bottom: 2px solid $color-base;
+  background: transparent;
+  display: block;
+  height: 60px;
+  margin-bottom: $space-sm;
+  width: 100%;
+}
+
+textarea {
+  border: 2px solid $color-base;
+  height: 300px;
+  padding: 15px;
+}

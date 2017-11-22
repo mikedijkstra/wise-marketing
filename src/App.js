@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Route } from "react-router-dom";
-import TransitionGroup from "react-transition-group/TransitionGroup";
 
+import ScrollToTopRoute from './Components/ScrollToTopRoute';
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
 import About from './Components/About';
+import Pricing from './Components/Pricing';
 import Contact from './Components/Contact';
 
 class App extends Component {
@@ -36,13 +37,12 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <div>
-          <Nav />
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/contact" component={Contact} />
-          <Footer />
-        </div>
+        <Nav />
+        <ScrollToTopRoute exact path="/" component={Home} />
+        <ScrollToTopRoute exact path="/about" component={About} />
+        <ScrollToTopRoute exact path="/contact" component={Contact} />
+        <ScrollToTopRoute exact path="/pricing" component={Pricing} />
+        <Footer />
       </div>
     );
   }
