@@ -919,10 +919,6 @@ body,
   padding: $space-sm;
   width: 100%;
 
-  &.card-xs {
-    width: 50%;
-  }
-
   @include sm {
     width: 50%;
   }
@@ -931,6 +927,15 @@ body,
     width: 33.3333333%;
   }
 }
+
+.card-xs {
+  width: 50%;
+
+  @include md {
+    width: 33.3333333%;
+  }
+}
+
 
 .card--disabled {
   cursor: not-allowed;
