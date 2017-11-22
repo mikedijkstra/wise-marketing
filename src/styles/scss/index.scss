@@ -262,25 +262,28 @@ a {
 .t-sxs {
   font-size: $text-xxs;
   line-height: $line-sm;
-  margin-bottom: $space-sm;
+  margin-bottom: $space-xs;
 
   @include md {
     font-size: $text-xs;
-    margin-bottom: $space-md;
+    margin-bottom: $space-xs;
   }
 }
 
 .t-set {
   h1 {
     @extend .t-set-xxl, .t-face-title;
+    max-width: 600px;
   }
 
   h2 {
     @extend .t-set-xl, .t-face-title;
+    max-width: 600px;
   }
 
   h3 {
     @extend .t-set-lg, .t-face-title;
+    max-width: 600px;
   }
 
   h4 {
@@ -326,7 +329,7 @@ a {
 
   img {
     display: block;
-    max-width: 50%;
+    max-width: 100%;
     margin: $space-md auto;
     width: 100%;
   }
@@ -335,6 +338,10 @@ a {
 img {
   max-width: 100%;
   width: 100%;
+}
+
+.t-center {
+  text-align: center;
 }
 
 /**
@@ -813,7 +820,7 @@ body,
 
 .page {
   border-radius: 5px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: $space-lg auto;
   position: relative;
   z-index: 2;
@@ -823,10 +830,13 @@ body,
   }
 }
 
-.page-content {
+.page--narrow {
+  max-width: 900px;
+}
+
+.page-inner {
   background-color: $color-dark-background;
   padding: $space-sm $space-md;
-  margin: 0 $space-sm;
 
   @include md {
     padding: $space-md $space-lg;
@@ -838,18 +848,24 @@ body,
   flex-flow: row wrap;
 
   .page-content {
+    order: 2;
+
     @include sm {
       margin: 0;
+      order: 0;
       width: 50%;
     }
   }
 
   .page-aside {
-    margin: 0 $space-sm;
+    background: white;
+    box-shadow: 0 1px 10px 0 rgba(255,255,255,0.2);
+    padding: $space-sm;
+    margin: 0 0 $space-sm;
 
     @include sm {
-      margin-right: 0;
       margin-left: 10%;
+      margin-right: 0;
       width: 40%;
     }
   }
@@ -862,10 +878,14 @@ body,
 .bump {
   max-width: 600px;
   margin: 0 auto;
-  padding: $space-sm $space-md;
+  padding: $space-sm;
   text-align: center;
   position: relative;
   z-index: 2;
+
+  @include sm {
+    padding: $space-sm $space-md;
+  }
 
   @include md {
     margin-top: $space-lg;
@@ -889,15 +909,32 @@ body,
   overflow: hidden;
   position: relative;
   z-index: 2;
+
+  &.cards--narrow {
+    max-width: 600px;
+  }
 }
 
 .card {
   padding: $space-sm;
-  width: 50%;
+  width: 100%;
+
+  &.card-xs {
+    width: 50%;
+  }
+
+  @include sm {
+    width: 50%;
+  }
 
   @include md {
     width: 33.3333333%;
   }
+}
+
+.card--disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 .card-inner {
@@ -908,10 +945,32 @@ body,
   text-align: center;
 }
 
-.card-icon {
+.icon {
   display: block;
-  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  padding: $space-sm;
   text-align: center;
+
+  svg {
+    fill: white;
+    height: 100%;
+    width: auto;
+  }
+}
+
+.icon-wide {
+  height: auto;
+
+  svg {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.icon-md {
+  height: 150px;
 }
 
 /**

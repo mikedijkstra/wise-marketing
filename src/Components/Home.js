@@ -1,4 +1,20 @@
 import React, { Component } from 'react';
+import LogoMedium from './Logos/Medium';
+import LogoAcrobat from './Logos/Acrobat';
+import LogoSoundcloud from './Logos/Soundcloud';
+import LogoYoutube from './Logos/Youtube';
+import LogoWordpress from './Logos/Wordpress';
+import LogoEbook from './Logos/Ebook';
+import IconOnboarding from './Icons/Onboarding';
+import IconNews from './Icons/News';
+import IconBestPractices from './Icons/BestPractices';
+import IconInspiration from './Icons/Inspiration';
+import IconCourses from './Icons/Courses';
+import IconStudy from './Icons/Study';
+import IconSlack from './Icons/Slack';
+import IconChrome from './Icons/Chrome';
+import IconSafari from './Icons/Safari';
+import IconFirefox from './Icons/Firefox';
 
 class Home extends Component {
   render() {
@@ -16,64 +32,70 @@ class Home extends Component {
               <div className="headlines u-padding-left-sm u-sm-padding-left-xl">
                 <div className="headline">
                   <h1 className="t-face-title u-tmd u-xs-txl u-lg-txxl u-line-sm">
-                    <span className="headline-title">A shared reading list</span>
-                    <span className="headline-sub">for your team.</span>
+                    <span className="headline-title">Wise is a shared reading</span>
+                    <span className="headline-sub">list for your team.</span>
                   </h1>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="page">
+          <div className="page page--narrow">
             <div className="page-content t-set">
-              <h3>Creating a shared reading list should be easy.</h3>
-              <img src="/images/team-share.png" />
-              <p>Keeping a shared list of links with your team shouldn't be hard, and with Wise, it isn't. Wise helps you create shared reading lists for your team, so links are no longer lost in Slack, emails and text messages.</p>
-              <p>Shared reading lists are made up of links added by you and your team members and are always available online and in a linked Slack channel.</p>
+              <div class="page-inner">
+                <h3>Creating a shared reading list with your team shouldn't be hard &hellip;</h3>
+                <img src="images/list-confused.svg" />
+                <h4>&hellip; and with Wise, it isnt.</h4>
+                <p>Wise helps you create shared reading lists for your team, so links are no longer lost in Slack, emails and text messages.</p>
+                <p>Shared reading lists are made up of links added by you and your team members and are always available online and in a linked Slack channel.</p>
+              </div>
             </div>
           </div>
 
           <div className="bump t-set">
-            <h3>Wise is a searchable knowledge base</h3>
-            <p>Wise shared readings lists grow into a searchable knowledge base of useful, relevant content of all different types.</p>
+            <h3>Wise will be your team's searchable knowledge base</h3>
+            <p>Wise shared readings lists grow into a searchable knowledge base of useful, relevant content important to your team, from a variety of sources.</p>
           </div>
 
-          <div className="cards">
-            <div className="card">
-              <div className="card-icon">Medium</div>
+          <div className="cards cards--narrow">
+            <div className="card card-xs">
+              <div className="icon icon-wide"><LogoMedium /></div>
             </div>
 
-            <div className="card">
-              <div className="card-icon">Youtube</div>
+            <div className="card card-xs">
+              <div className="icon icon-wide"><LogoYoutube /></div>
             </div>
 
-            <div className="card">
-              <div className="card-icon">Soundcloud</div>
+            <div className="card card-xs">
+              <div className="icon icon-wide"><LogoSoundcloud /></div>
             </div>
 
-            <div className="card">
-              <div className="card-icon">eBooks</div>
+            <div className="card card-xs">
+              <div className="icon icon-wide"><LogoWordpress /></div>
             </div>
 
-            <div className="card">
-              <div className="card-icon">PDFs</div>
+            <div className="card card-xs">
+              <div className="icon icon-wide"><LogoAcrobat /></div>
             </div>
 
-            <div className="card">
-              <span className="card-icon">Text</span>
+            <div className="card card-xs">
+              <div className="icon icon-wide"><LogoEbook /></div>
             </div>
           </div>
 
           <div className="page">
             <div className="page-split">
               <div className="page-content t-set">
-                <h3>Track and rate</h3>
-                <p>Wise makes it easy for everyone on your team to track their reading progress. By marking a link as team members can easily stay on top of shared reading lists, filtering the list by unread items or revisiting links they’ve read previously.</p>
-                <p>Wise also lets team members rate links by upvoting, similar to what you find on services like Reddit, Hacker News and Product Hunt. By rating links you can learn what your team enjoy reading and content they agree with.</p>
-                <p>Wise will be launching advanced analytics for teams to better track reading progress and understand and source relevant content.</p>
+                <div class="page-inner">
+                  <h3>Contribute, track and rate links in your lists</h3>
+                  <p>Wise makes it easy for everyone on your team to contribute links and track their reading progress. By marking a link as read team members can easily stay on top of shared reading lists, filtering the list by unread items or revisiting links they’ve read previously.</p>
+                  <p>Wise also lets team members rate links by upvoting, similar to what you find on services like Reddit, Hacker News and Product Hunt. By rating links you can learn what your team enjoy reading and content they agree with.</p>
+                  <h5>Ready to create a shared reading list?</h5>
+                  <p><a href="https://read.wiseapp.com/auth/slack" className="btn">Sign up with Slack</a></p>
+                </div>
               </div>
               <div className="page-aside">
-                <img src="/images/team-share.png" />
+                <img src="images/list-screenshot.png" />
               </div>
             </div>
           </div>
@@ -86,48 +108,48 @@ class Home extends Component {
           <div className="cards">
             <div className="card">
               <div className="card-inner t-set">
-                <div className="card-icon">Icon</div>
-                <h4>Onboarding</h4>
+                <div className="icon"><IconOnboarding /></div>
+                <h6>Onboarding</h6>
                 <p>Ensure new employees know what's important to your company.</p>
               </div>
             </div>
 
             <div className="card">
               <div className="card-inner t-set">
-                <div className="card-icon">Icon</div>
-                <h4>News</h4>
+                <div className="icon"><IconNews /></div>
+                <h6>News</h6>
                 <p>Keep your team updated on news relevant to your industry.</p>
               </div>
             </div>
 
             <div className="card">
               <div className="card-inner t-set">
-                <div className="card-icon">Icon</div>
-                <h4>Best practices</h4>
+                <div className="icon"><IconBestPractices /></div>
+                <h6>Best Practices</h6>
                 <p>Maintain a list of best practices for your field of expertise.</p>
               </div>
             </div>
 
             <div className="card">
               <div className="card-inner t-set">
-                <div className="card-icon">Icon</div>
-                <h4>Inspiration</h4>
+                <div className="icon"><IconInspiration /></div>
+                <h6>Inspiration</h6>
                 <p>Collect and discuss inspiration for a project.</p>
               </div>
             </div>
 
             <div className="card">
               <div className="card-inner t-set">
-                <div className="card-icon">Icon</div>
-                <h4>Courses</h4>
-                <p>Supplement course material with a list of related links.</p>
+                <div className="icon"><IconCourses /></div>
+                <h6>Courses</h6>
+                <p>Supplement course material.</p>
               </div>
             </div>
 
             <div className="card">
               <div className="card-inner t-set">
-                <div className="card-icon">Icon</div>
-                <h4>Study</h4>
+                <div className="icon"><IconStudy /></div>
+                <h6>Study</h6>
                 <p>Maintain a list of links with your study group.</p>
               </div>
             </div>
@@ -135,21 +157,24 @@ class Home extends Component {
 
           <div className="bump t-set">
             <h3>Cross-platform support</h3>
-            <p>Slack Icon</p>
-            <p>In addition to the web, Wise integrates with Slack so your team can easily add new links and be notified of when a shared reading list is updated, you simply link a list to a channel and @wisebot will do the rest.</p>
+            <p className="icon icon-md"><IconSlack /></p>
+            <p>In addition to the web, Wise integrates with Slack so your team can easily add new links and be notified when a shared reading list is updated, you simply link a list to a channel and @wisebot will do the rest.</p>
           </div>
 
           <div className="cards">
-            <div className="card">
-              <div className="card-icon">Chrome</div>
+            <div className="card card--disabled">
+              <div className="icon"><IconChrome /></div>
+              <p class="t-center">Coming Soon</p>
             </div>
 
-            <div className="card">
-              <div className="card-icon">Safari</div>
+            <div className="card card--disabled">
+              <div className="icon"><IconSafari /></div>
+              <p class="t-center">Coming Soon</p>
             </div>
 
-            <div className="card">
-              <div className="card-icon">Firefox</div>
+            <div className="card card--disabled">
+              <div className="icon"><IconFirefox /></div>
+              <p class="t-center">Coming Soon</p>
             </div>
           </div>
 
@@ -160,7 +185,7 @@ class Home extends Component {
           <div className="page">
             <div className="page-split">
               <div className="page-content t-set">
-                <h3>Start a shared reading list</h3>
+                <h3>Start your shared reading list</h3>
                 <p>Get started with Wise today for free. By signing up with Slack you'll allow Wise to connect to your Slack account and create a #wise channel which will be your first reading list.</p>
                 <p>You can add links directly from Slack and every new article added will be shared in your linked Slack channel.</p>
 
@@ -169,7 +194,7 @@ class Home extends Component {
                 <p><small>Don't use Slack? We'll be opening up Wise to all users soon.</small></p>
               </div>
               <div className="page-aside">
-                <img src="/images/team-share.png" />
+                <img src="images/wisebot-slack.png" />
               </div>
             </div>
           </div>
