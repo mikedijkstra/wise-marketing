@@ -163,7 +163,7 @@ class Home extends Component {
               <div className="card-inner t-set">
                 <div className="icon"><IconCourses /></div>
                 <h6>Courses</h6>
-                <p>Supplement course material.</p>
+                <p>Supplement courses with suggested reading.</p>
               </div>
             </div>
 
