@@ -21,12 +21,7 @@ class Credits extends Component {
                 Question mark, onboarding icon by unlimicon from the Noun Project<br />
                 Slack icon by Danil Polshin from the Noun Project<br />
                 Browser icon by Adrien Coquet from the Noun Project<br />
-                App icon by Three Six Five from the Noun Project<br />
-                Onboarding icon by Lil Squid from the Noun Project<br />
-                Check mark by Alena Artemova from the Noun Project<br />
-                Light bulb by Kidiladon from the Noun Project<br />
-                Courses icon by Lakshisha from the Noun Project<br />
-                Study icon by Rob Crosswell from the Noun Project<br />
+                App icon by Three Six Five from the Noun Project
               </p>
             </div>
           </div>
