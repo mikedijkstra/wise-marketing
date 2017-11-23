@@ -858,6 +858,10 @@ body,
   &.page--top {
     margin-top: $space-lg * 2;
   }
+
+  img {
+    max-width: 600px;
+  }
 }
 
 .page--narrow {

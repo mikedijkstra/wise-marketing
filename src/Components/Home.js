@@ -24,6 +24,7 @@ import IconFirefox from './Icons/Firefox';
 class Home extends Component {
   constructor(props) {
     super(props)
+
     this.state = { show: false }
   }
 
@@ -70,6 +71,8 @@ class Home extends Component {
               <img src="images/list-ordered.svg" alt="Team organised sharing links" />
               <p>Wise helps you create shared reading lists for your team, so links are no longer lost in Slack, emails and text messages.</p>
               <p>Shared reading lists are made up of links added by you and your team members and are always available online and in a linked Slack channel.</p>
+              <hr className="divider" />
+              <Signup />
             </div>
           </div>
         </div>
