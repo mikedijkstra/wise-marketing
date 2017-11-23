@@ -81,6 +81,7 @@ class ContactForm extends Component {
               type="text"
               required="required"
               value={name}
+              placeholder="Enter your name"
               onChange={this.handleChange} />
           </label>
 
@@ -91,12 +92,11 @@ class ContactForm extends Component {
               type="email"
               required="required"
               value={email}
+              placeholder="Enter your email"
               onChange={this.handleChange} />
           </label>
 
-          <label>
-            <textarea name="body" value={body} onChange={this.handleChange} />
-          </label>
+          <textarea name="body" placeholder="Enter your message" value={body} onChange={this.handleChange} />
 
           <button className="btn" type="submit">Submit</button>
         </form>

@@ -875,6 +875,15 @@ body,
   @include md {
     padding: $space-md $space-lg;
   }
+
+  form,
+  hr {
+    margin-right: -$space-md;
+
+    @include md {
+      margin-right: -$space-lg;
+    }
+  }
 }
 
 .page-split {
@@ -1170,7 +1179,20 @@ body.page {
 
 label {
   @extend .t-sxs;
+  font-size: 16px;
   display: block;
+  position: relative;
+  @include sm {
+    height: $input-height;
+    line-height: $input-height;
+  }
+
+  input {
+    @include sm {
+      position: absolute;
+      top: 0;
+    }
+  }
 }
 
 input,
@@ -1179,13 +1201,19 @@ textarea {
   border-bottom: 2px solid $color-base;
   background: transparent;
   display: block;
+  font-size: 16px;
   height: 60px;
   margin-bottom: $space-sm;
+  padding-left: 0;
   width: 100%;
+
+  @include sm {
+    padding-left: 60px;
+  }
 }
 
 textarea {
-  border: 2px solid $color-base;
-  height: 300px;
-  padding: 15px;
+  height: 150px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
