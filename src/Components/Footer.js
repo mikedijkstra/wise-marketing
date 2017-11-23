@@ -12,9 +12,13 @@ class Footer extends Component {
                 <Link to="/about" className="footer-link">About</Link>
                 <Link to="/pricing" className="footer-link">Pricing</Link>
                 <Link to="/contact" className="footer-link">Contact</Link>
-                <a href="" className="footer-link" target="_blank">Help</a>
-                <a href="" className="footer-link" target="_blank">Terms</a>
               </div>
+            </div>
+
+            <div className="col-sm-3">
+              <a href="/terms" className="footer-link footer-link-right">Terms</a>
+              <a href="/credits" className="footer-link footer-link-right">Credits</a>
+              <a href="http://help.wiseapp.com" className="footer-link footer-link-right" target="_blank">Help</a>
             </div>
           </div>
         </div>
