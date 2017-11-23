@@ -9,12 +9,6 @@ import LogoSoundcloud from './Logos/Soundcloud';
 import LogoYoutube from './Logos/Youtube';
 import LogoWordpress from './Logos/Wordpress';
 import LogoEbook from './Logos/Ebook';
-import IconOnboarding from './Icons/Onboarding';
-import IconNews from './Icons/News';
-import IconBestPractices from './Icons/BestPractices';
-import IconInspiration from './Icons/Inspiration';
-import IconCourses from './Icons/Courses';
-import IconStudy from './Icons/Study';
 import IconSlack from './Icons/Slack';
 import IconChrome from './Icons/Chrome';
 import IconSafari from './Icons/Safari';
@@ -84,27 +78,27 @@ class Home extends Component {
 
         <div className="cards cards--narrow">
           <div className="card card-xs">
-            <div className="icon icon-wide"><LogoMedium /></div>
+            <div className="icon"><LogoMedium /></div>
           </div>
 
           <div className="card card-xs">
-            <div className="icon icon-wide"><LogoYoutube /></div>
+            <div className="icon"><LogoYoutube /></div>
           </div>
 
           <div className="card card-xs">
-            <div className="icon icon-wide"><LogoSoundcloud /></div>
+            <div className="icon"><LogoSoundcloud /></div>
           </div>
 
           <div className="card card-xs">
-            <div className="icon icon-wide"><LogoWordpress /></div>
+            <div className="icon"><LogoWordpress /></div>
           </div>
 
           <div className="card card-xs">
-            <div className="icon icon-wide"><LogoAcrobat /></div>
+            <div className="icon"><LogoAcrobat /></div>
           </div>
 
           <div className="card card-xs">
-            <div className="icon icon-wide"><LogoEbook /></div>
+            <div className="icon"><LogoEbook /></div>
           </div>
         </div>
 
@@ -133,7 +127,7 @@ class Home extends Component {
         <div className="cards">
           <div className="card">
             <div className="card-inner t-set">
-              <div className="icon"><IconOnboarding /></div>
+              <div className="icon icon-tree"></div>
               <h6>Onboarding</h6>
               <p>Ensure new employees know what's important to your company.</p>
             </div>
@@ -141,7 +135,7 @@ class Home extends Component {
 
           <div className="card">
             <div className="card-inner t-set">
-              <div className="icon"><IconNews /></div>
+              <div className="icon icon-newspaper"></div>
               <h6>News</h6>
               <p>Keep your team updated on news relevant to your industry.</p>
             </div>
@@ -149,7 +143,7 @@ class Home extends Component {
 
           <div className="card">
             <div className="card-inner t-set">
-              <div className="icon"><IconBestPractices /></div>
+              <div className="icon icon-list-numbered"></div>
               <h6>Best Practices</h6>
               <p>Maintain a list of best practices for your field of expertise.</p>
             </div>
@@ -157,7 +151,7 @@ class Home extends Component {
 
           <div className="card">
             <div className="card-inner t-set">
-              <div className="icon"><IconInspiration /></div>
+              <div className="icon icon-power"></div>
               <h6>Inspiration</h6>
               <p>Collect and discuss inspiration for a project.</p>
             </div>
@@ -165,7 +159,7 @@ class Home extends Component {
 
           <div className="card">
             <div className="card-inner t-set">
-              <div className="icon"><IconCourses /></div>
+              <div className="icon icon-books"></div>
               <h6>Courses</h6>
               <p>Supplement courses with suggested reading.</p>
             </div>
@@ -173,7 +167,7 @@ class Home extends Component {
 
           <div className="card">
             <div className="card-inner t-set">
-              <div className="icon"><IconStudy /></div>
+              <div className="icon icon-bookmarks"></div>
               <h6>Study</h6>
               <p>Maintain a list of links with your study group.</p>
             </div>

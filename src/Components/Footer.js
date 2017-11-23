@@ -18,7 +18,7 @@ class Footer extends Component {
             <div className="col-sm-3">
               <a href="/terms" className="footer-link footer-link-right">Terms</a>
               <a href="/credits" className="footer-link footer-link-right">Credits</a>
-              <a href="http://help.wiseapp.com" className="footer-link footer-link-right" target="_blank">Help</a>
+              <a href="http://help.wiseapp.com" className="footer-link footer-link-right" rel="noopener noreferrer" target="_blank">Help</a>
             </div>
           </div>
         </div>

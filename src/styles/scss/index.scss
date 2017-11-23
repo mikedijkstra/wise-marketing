@@ -8,15 +8,17 @@
  *
  */
 
-@import "_lib/bootstrap/_normalize";
-@import "_lib/stencil/_bootstrap";
+@import "_lib/stencil/core/variables";
+@import "variables";
+@import "_lib/stencil/core/mixins";
+@import "_lib/bootstrap/normalize";
+@import "_lib/stencil/bootstrap";
 @import "_lib/animate/animate";
 @import "_lib/waypoints/waypoints";
 @import "_lib/stencil/core/utilities";
 @import "sprite";
-@import "_lib/stencil/variables";
-@import "_lib/stencil/fonts";
-@import "_lib/stencil/mixins";
+@import "fonts";
+@import "mixins";
 
 $sections-nav-height: 70px;
 $sections-nav-items: 6;
@@ -1002,30 +1004,22 @@ body,
 
 .icon {
   display: block;
+  font-size: 40px;
   margin-left: auto;
   margin-right: auto;
-  height: 100px;
   padding: $space-sm;
   text-align: center;
+  width: 100px;
 
   svg {
     fill: white;
-    height: 100%;
-    width: auto;
-  }
-}
-
-.icon-wide {
-  height: auto;
-
-  svg {
     height: auto;
     width: 100%;
   }
 }
 
 .icon-md {
-  height: 150px;
+  width: 150px;
 }
 
 /**

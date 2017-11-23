@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Route } from "react-router-dom";
 
 import ScrollToTopRoute from './Components/ScrollToTopRoute';
+
 import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
