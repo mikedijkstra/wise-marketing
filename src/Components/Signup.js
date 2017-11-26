@@ -27,7 +27,7 @@ class Signup extends Component {
         <p>By signing up with Slack you'll allow Wise to connect to your Slack account and create a #wise channel which will be your first reading list.</p>
         <p>You can add links directly from Slack and every new article added will be shared in your linked Slack channel.</p>
 
-        <p><a href="https://read.wiseapp.com/auth/slack" className="btn" onClick={this.trackSignin} >Sign up with Slack</a></p>
+        <p><a href="https://read.wiseapp.com/identities/new?provider=slack" className="btn" onClick={this.trackSignin} >Sign up with Slack</a></p>
 
         <p><small>Don't use Slack? We'll be opening up Wise to all users soon.</small></p>
       </div>

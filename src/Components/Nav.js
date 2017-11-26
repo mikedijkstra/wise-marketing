@@ -31,7 +31,7 @@ class Nav extends Component {
               <li className="nav-link"><Link to="/pricing">Pricing</Link></li>
               <li className="nav-link"><Link to="/contact">Contact</Link></li>
             </ul>
-            <a href="https://read.wiseapp.com/auth/slack" className="nav-cta btn js-section-nav-item" onClick={this.trackSignin}>Sign in</a>
+            <a href="https://read.wiseapp.com/identities/new?provider=slack" className="nav-cta btn js-section-nav-item" onClick={this.trackSignin}>Sign in</a>
           </div>
         </div>
       </div>
