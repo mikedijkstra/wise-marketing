@@ -181,20 +181,20 @@ class Home extends Component {
         </div>
 
         <div className="cards">
-          <div className="card card-xs card--disabled">
+          <a href="https://read.wiseapp.com/extensions/chrome" className="card card-xs">
             <div className="icon"><IconChrome /></div>
-            <p className="t-center">Coming Soon</p>
-          </div>
+            <p className="t-center">Chrome</p>
+          </a>
 
-          <div className="card card-xs card--disabled">
+          <a href="https://read.wiseapp.com/extensions/safari" className="card card-xs">
             <div className="icon"><IconSafari /></div>
-            <p className="t-center">Coming Soon</p>
-          </div>
+            <p className="t-center">Safari</p>
+          </a>
 
-          <div className="card card-xs card--disabled card-xs--widow">
+          <a href="https://read.wiseapp.com/extensions/firefox" className="card card-xs">
             <div className="icon"><IconFirefox /></div>
-            <p className="t-center">Coming Soon</p>
-          </div>
+            <p className="t-center">Firefox</p>
+          </a>
         </div>
 
         <div className="bump bump-accompanying t-set">
