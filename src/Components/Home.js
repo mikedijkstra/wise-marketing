@@ -110,7 +110,7 @@ class Home extends Component {
                 <p>Wise makes it easy for everyone on your team to contribute links and track their reading progress. By marking a link as read team members can easily stay on top of shared reading lists, filtering the list by unread items or revisiting links they’ve read previously.</p>
                 <p>Wise also lets team members rate links by upvoting, similar to what you find on services like Reddit, Hacker News and Product Hunt. By rating links you can learn what your team enjoy reading and content they agree with.</p>
                 <h5>Ready to create a shared reading list?</h5>
-                <p><a href="https://read.wiseapp.com/auth/slack" className="btn">Sign up with Slack</a></p>
+                <p><a href="https://read.wiseapp.com/identities/new?provider=slack" className="btn">Sign up with Slack</a></p>
               </div>
             </div>
             <div className="page-aside">
