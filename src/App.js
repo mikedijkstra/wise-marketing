@@ -29,7 +29,7 @@ class App extends Component {
   }
 
   handleScroll() {
-    let scrollTop = window.scrollY
+    let scrollTop = window.scrollY || window.pageYOffset
     let windowHeight = window.innerHeight/2
     if (scrollTop > windowHeight/2) {
       document.body.classList.add('is-scrolled')
