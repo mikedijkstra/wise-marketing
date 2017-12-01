@@ -47,7 +47,7 @@ class Home extends Component {
 
             <div className="headlines u-padding-left-sm u-sm-padding-left-xl">
               <div className="headline">
-                <h1 className="t-face-title u-tmd u-xs-txl u-lg-txxl u-line-sm">
+                <h1 className="t-face-title u-tmd u-xs-tlg u-sm-txl u-lg-txxl u-line-sm">
                   <span className="headline-title">Wise is a shared reading</span>
                   <span className="headline-sub">list for your team.</span>
                 </h1>
