@@ -978,6 +978,10 @@ body,
 
   &:last-child {
     margin-left: 25%;
+
+    @include sm {
+      margin-left: 0;
+    }
   }
 
   &:nth-of-type(2n) {

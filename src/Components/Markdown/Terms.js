@@ -1,7 +1,7 @@
 export default `
 # Terms of Use
 
-Wise turns web content - articles, stories, posts, essays and journals - into a shared reading experience within communities of continuous learning.
+Wise turns web content - articles, stories, posts, essays and journals - into a shared reading list.
 
 Please read these Terms of Use (collectively with Wise's Privacy Policy and DMCA Copyright Policy, the "Terms of Use”) fully and carefully before using www.wiseapp.com (the "Site") and the services, features, content or applications, including the Wise application (the "Application") offered by From Row Ventures, Inc. ("Wise", "we", "us" or "our") (together with the Site, the "Services"). These Terms of Use set forth the legally binding terms and conditions for your use of the Site and the Services.
 

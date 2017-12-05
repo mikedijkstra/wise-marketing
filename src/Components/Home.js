@@ -41,7 +41,7 @@ class Home extends Component {
             <div className="insight"><span>Create a culture of continuous learning</span></div>
             <div className="insight"><span>Build a searchable knowledge base</span></div>
             <div className="insight"><span>Set reading goals to work towards</span></div>
-            <div className="insight"><span>Build a searchable knowledge base</span></div>
+            <div className="insight"><span>Contribute, track and rate links</span></div>
             <div className="insight"><span>Extend formal learning courses</span></div>
             <div className="insight"><span>Share articles, videos and audio</span></div>
 
