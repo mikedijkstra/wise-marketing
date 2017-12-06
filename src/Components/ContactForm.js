@@ -102,7 +102,10 @@ class ContactForm extends Component {
               onChange={this.handleChange} />
           </label>
 
-          {!notify && <textarea name="body" placeholder="Enter your message" value={body} onChange={this.handleChange} />}
+          {!notify && <textarea name="body"
+            placeholder="Enter your message"
+            value={body}
+            onChange={this.handleChange} />}
 
           <button className="btn" type="submit">Submit</button>
         </form>
