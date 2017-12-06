@@ -60,6 +60,7 @@ class ContactForm extends Component {
     const { notify } = this.props
     let successMessage = "Thanks! We'll get in touch soon."
     if (notify) {
+      this.setState({ body: 'Notify when Wise is available to all users' })
       successMessage = "We'll let you know Wise is available!"
     }
 
