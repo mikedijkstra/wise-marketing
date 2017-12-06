@@ -11,6 +11,7 @@ import Pricing from './Components/Pricing';
 import Contact from './Components/Contact';
 import Terms from './Components/Terms';
 import Credits from './Components/Credits';
+import Notify from './Components/Notify';
 import NotFound from './Components/NotFound';
 
 class App extends Component {
@@ -46,6 +47,7 @@ class App extends Component {
           <ScrollToTopRoute exact path="/" component={Home} />
           <ScrollToTopRoute exact path="/about" component={About} />
           <ScrollToTopRoute exact path="/contact" component={Contact} />
+          <ScrollToTopRoute exact path="/notify" component={Notify} />
           <ScrollToTopRoute exact path="/pricing" component={Pricing} />
           <ScrollToTopRoute exact path="/terms" component={Terms} />
           <ScrollToTopRoute exact path="/credits" component={Credits} />

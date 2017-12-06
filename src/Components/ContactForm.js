@@ -57,10 +57,16 @@ class ContactForm extends Component {
 
   render() {
     const { formSuccess, formError, name, email, body } = this.state
+    const { notify } = this.props
+    let successMessage = "Thanks! We'll get in touch soon."
+    if (notify) {
+      successMessage = "We'll let you know Wise is available!"
+    }
+
     if (formSuccess) {
       return(
         <div className="form-message">
-          <h4>Thanks! We'll get in touch soon.</h4>
+          <h4>{successMessage}</h4>
           <Link to="/" className="btn">Return home</Link>
         </div>
       )
@@ -96,7 +102,7 @@ class ContactForm extends Component {
               onChange={this.handleChange} />
           </label>
 
-          <textarea name="body" placeholder="Enter your message" value={body} onChange={this.handleChange} />
+          {!notify && <textarea name="body" placeholder="Enter your message" value={body} onChange={this.handleChange} />}
 
           <button className="btn" type="submit">Submit</button>
         </form>

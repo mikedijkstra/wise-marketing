@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Signup extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ class Signup extends Component {
 
         <p><a href="https://read.wiseapp.com/identities/new?provider=slack" className="btn" onClick={this.trackSignin} >Sign up with Slack</a></p>
 
-        <p><small>Don't use Slack? We'll be opening up Wise to all users soon.</small></p>
+        <p><small>Don't use Slack? <Link to="/notify">Sign up to be notified</Link> when we open Wise up to all users.</small></p>
       </div>
     )
   }
