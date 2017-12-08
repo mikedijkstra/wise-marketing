@@ -55,6 +55,16 @@ class ContactForm extends Component {
     this.setState({ formSuccess: false, formError: false })
   }
 
+  showFormError(formError) {
+    if (formError) {
+      return(
+        <div className="form-message">
+          <h4>There was an error submitting the form. Please try again.</h4>
+        </div>
+      )
+    }
+  }
+
   render() {
     const { formSuccess, formError, name, email, body } = this.state
     const { notify } = this.props
@@ -70,16 +80,10 @@ class ContactForm extends Component {
           <Link to="/" className="btn">Return home</Link>
         </div>
       )
-    } else if (formError) {
-      return(
-        <div className="form-message">
-          <h4>There was an error submitting the form</h4>
-          <button className="btn" onClick={this.resetForm}>Try again</button>
-        </div>
-      )
     } else {
       return (
         <form onSubmit={this.handleSubmit}>
+          {this.showFormError(formError)}
           <label>
             Name
             <input
