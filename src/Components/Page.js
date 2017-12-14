@@ -16,7 +16,7 @@ class Page extends Component {
         transition="opacity 0.3s ease-in"
         finalStyle={{opacity: 1}}
       >
-        <Helmet title="Wise is a shared reading list for your team" />
+        <Helmet title={this.props.title} />
         <div className={wrapperClass}>
           {this.props.children}
         </div>
