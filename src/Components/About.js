@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-import Page from './Page';
-import Signup from './Signup';
+import React, { Component } from 'react'
+import Page from './Page'
 
 class About extends Component {
   render() {
@@ -15,12 +14,20 @@ class About extends Component {
           <div className="page-content t-set">
             <div className="page-inner">
               <h1>About</h1>
-              <p>Wise is a product by Front Row Ventures, founded by Tim Howard and Michael Dijkstra. Both as individuals and as a team we have been involved in the formation, development and guidance of dozens of early stage technology businesses.</p>
-                <p>Recently, Wise has become our primary focus and the product that we are most passionate about seeing succeed and continue to get the most enjoyment out of building and taking to market.</p>
-              <p>Wise has been through a number of iterations, from a twitter-only implementation originally to test the concept, through life under its working title of Professional learning in your pocket ("Pliyp") and now under full Beta as ‘Wise’.</p>
-              <p>We developed Wise in response to our own needs and with a belief that the current model for continuous learning was broken. We never really engaged with traditional curriculum-based approaches and instead turned to our own knowledge discovery to satisfy our learning needs, Wise is a formalisation of these informal learning habits.</p>
-              <hr className="divider" />
-              <Signup />
+              <p>
+                Four years ago we set out to build a shared reading experience
+                to make it simple and enjoyable for teams to consolidate their
+                reading lists as a team and discover new, relevant content.
+                Along the way we built Wise and have been lucky to have
+                accumulated a loyal use base who, through feedback, have shared
+                our mission through the good and the bad.
+              </p>
+              <p>
+                Alas, it is with regret that we have to end our journey.
+                Unfortunately we have not been able to build Wise into a
+                sustainable enterprise and as a result will be closing down the
+                platform.
+              </p>
             </div>
           </div>
         </div>
@@ -29,4 +36,4 @@ class About extends Component {
   }
 }
 
-export default About;
+export default About

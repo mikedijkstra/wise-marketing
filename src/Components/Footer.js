@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Link } from "react-router-dom";
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Footer extends Component {
   render() {
@@ -7,24 +7,21 @@ class Footer extends Component {
       <div className="footer js-footer">
         <div className="footer-container">
           <div className="row">
-            <div className="col-sm-9">
-              <div className="u-text-center u-sm-text-left">
-                <Link to="/about" className="footer-link">About</Link>
-                <Link to="/pricing" className="footer-link">Pricing</Link>
-                <Link to="/contact" className="footer-link">Contact</Link>
-              </div>
-            </div>
+            <div className="col-sm-9" />
 
             <div className="col-sm-3">
-              <Link to="/terms" className="footer-link  footer-link-right">Terms</Link>
-              <Link to="/credits" className="footer-link  footer-link-right">Credits</Link>
-              <a href="http://help.wiseapp.com" className="footer-link footer-link-right" rel="noopener noreferrer" target="_blank">Help</a>
+              <Link to="/terms" className="footer-link  footer-link-right">
+                Terms
+              </Link>
+              <Link to="/credits" className="footer-link  footer-link-right">
+                Credits
+              </Link>
             </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 
-export default Footer;
+export default Footer

@@ -7,7 +7,6 @@ import Nav from './Components/Nav';
 import Footer from './Components/Footer';
 import Home from './Components/Home';
 import About from './Components/About';
-import Pricing from './Components/Pricing';
 import Contact from './Components/Contact';
 import Terms from './Components/Terms';
 import Credits from './Components/Credits';
@@ -48,7 +47,6 @@ class App extends Component {
           <ScrollToTopRoute exact path="/about" component={About} />
           <ScrollToTopRoute exact path="/contact" component={Contact} />
           <ScrollToTopRoute exact path="/notify" component={Notify} />
-          <ScrollToTopRoute exact path="/pricing" component={Pricing} />
           <ScrollToTopRoute exact path="/terms" component={Terms} />
           <ScrollToTopRoute exact path="/credits" component={Credits} />
           <ScrollToTopRoute component={NotFound} />
